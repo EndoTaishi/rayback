@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
-import Rayback from "./Index/Photos/rayback.JPG"
+import Rayback from "./Index/Photos/rayback.jpg"
 import Timeline from "./Index/Timeline"
 
 const Index = () => {
   return (
     <>
       <Eyecatch>
-        <img src={Rayback} alt="Rayback" />
         <p>Rayback</p>
       </Eyecatch>
       <Timeline />
@@ -17,10 +16,8 @@ const Index = () => {
 
 const Eyecatch = styled.div`
     position: relative;
-
-    img{
-        width: 100vw;
-    }
+    height: 100vh;
+    background-image: url(${Rayback});
 
     p{
         position: absolute;
